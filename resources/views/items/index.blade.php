@@ -142,10 +142,12 @@
                     $(".print-error-msg").css({
                             display:"none"
                         });
+                    $('#saveBtn').html('Save changes');
                     $('#ajaxModel').modal('hide');
                     table.draw();                               
                   }else{
                       printErrorMsg(data.error);
+                      $('#saveBtn').html('Save changes');
                   }      
                   
               },
